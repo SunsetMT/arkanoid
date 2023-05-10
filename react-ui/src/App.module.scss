@@ -1,0 +1,16 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.game-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  background: $background-gray;
+  @include disable-scrollbar;
+
+  @media screen and (min-width: 435px) {
+    align-items: center;
+  }
+}

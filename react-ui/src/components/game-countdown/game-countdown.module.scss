@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.game-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  font-size: 28px;
+}

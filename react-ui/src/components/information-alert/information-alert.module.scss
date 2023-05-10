@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.information-alert {
+  width: 325px;
+  height: 80px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: $light-gray;
+  border-radius: 10px;
+  margin: auto;
+
+  @media screen and (max-width: 400px) {
+    width: 280px;
+  }
+
+  &__text {
+    margin: 0 40px;
+    text-align: center;
+  }
+
+  &__close-button {
+    all: unset;
+    cursor: pointer;
+    background: $white;
+    color: $dark-gray;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover {
+      background: $bone-white;
+    }
+  }
+}
+
+
+
+
+

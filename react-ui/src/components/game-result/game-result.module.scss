@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.game-result {
+  max-width: 325px;
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  border-radius: 10px;
+  background: $gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__content {
+    color: $white;
+    margin: 35px 40px 35px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    white-space: pre-line;
+
+    &__header {
+      font-size: 32px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &-red {
+        color: $red;
+      }
+
+      &-green {
+        color: $green;
+      }
+
+      &-yellow {
+        color: $yellow;
+      }
+    }
+
+    &__replay {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 35px 35px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.auth-page {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+    padding: 30px;
+    background: $gray;
+    border-radius: 10px;
+    max-width: 325px;
+
+    & > form {
+      margin-bottom: 15px;
+    }
+
+    &-input {
+      all: unset;
+      background: $bone-white;
+      text-align: center;
+      width: 100%;
+      height: 35px;
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    &__controls {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__close-icon {
+      @include close-icon;
+    }
+  }
+}

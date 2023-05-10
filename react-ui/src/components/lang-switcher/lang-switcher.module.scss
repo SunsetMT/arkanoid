@@ -1,0 +1,8 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.lang-switcher {
+  background-color: $white;
+  color: $dark-gray;
+  @include controls-panel-button;
+}

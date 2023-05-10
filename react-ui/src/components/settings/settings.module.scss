@@ -1,0 +1,12 @@
+.settings {
+  padding: 0 25px;
+  flex-grow: 1;
+
+  &-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 40px 30px;
+    height: 100px;
+  }
+}

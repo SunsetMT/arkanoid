@@ -1,0 +1,28 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.controls-panel {
+  margin: 10px 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+
+  &__version {
+    margin-right: auto;
+    color: $white;
+  }
+
+  &__settings-button {
+    background: url('../../../public/images/settings.png') no-repeat center $white;
+  }
+
+  &__logout-button {
+    background: url('../../../public/images/logout.png') no-repeat center $white;
+  }
+
+  &__settings-button, &__exit-button, &__logout-button {
+    @include controls-panel-button;
+    background-size: 60%
+  }
+}

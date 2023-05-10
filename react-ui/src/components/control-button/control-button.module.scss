@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.control-button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: $white;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $dark-gray;
+  min-width: 100%;
+  padding: 0 8px;
+
+  &:hover {
+    background: $bone-white;
+  }
+
+  &-disabled {
+    background: $light-gray;
+    cursor: not-allowed;
+
+    &:hover {
+      background: $light-gray;
+    }
+  }
+}
